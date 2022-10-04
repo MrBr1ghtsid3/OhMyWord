@@ -1,2 +1,2 @@
-# Rich-Text-Editor---BootCamp-project-bit
+# Rich-Text-Editor---Bootcamp-Project
 
