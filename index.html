@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Oh, My Word! | a (not so) Rich Text Editor </title>
+  
+  <!-- Inspired by: https://codingartistweb.com/2022/04/rich-text-editor-with-javascript/ -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Rich Text Editor written by.. Me.">
+
+  <!-- Google Fonts //  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap v5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <!-- Custom Styling (Sassy!) -->
+  <link rel="stylesheet" href="/styles/default.css">
+
+</head>
+
+<body class="d-flex h-100 text-white bg-dark">
+
+  <div class='customAlert'>
+    <p class='message'></p>
+    <input type='button' class='confirmButton' value='Ok'>
+  </div>
+
+  <div class="container d-flex h-100 p-3 mx-auto flex-column">
+    <div class="options mx-auto">
+
+      <!-- Text Format -->
+      <button id="bold" class="option-button format">
+        <i class="bi bi-type-bold fa-lg"></i>
+      </button>
+      <button id="italic" class="option-button format">
+        <i class="bi bi-type-italic fa-lg"></i>
+      </button>
+      <button id="underline" class="option-button format">
+        <i class="bi bi-type-underline fa-lg"></i>
+      </button>
+      
+
+      <!-- List -->
+      <button id="insertOrderedList" class="option-button">
+        <i class="bi bi-list-ol fa-lg"></i>
+      </button>
+      <button id="insertUnorderedList" class="option-button">
+        <i class="bi bi-list-ul fa-lg"></i>
+      </button>
+
+      <!-- Link -->
+      <button id="createLink" class="adv-option-button">
+        <i class="bi bi-link-45deg fa-lg"></i>
+      </button>
+      <button id="unlink" name="unlink" class="option-button">
+        <i class="bi bi-x fa-lg"></i>
+      </button>
+
+      <!-- Alignment -->
+      <button id="justifyLeft" class="option-button align">
+        <i class="bi bi-text-left fa-lg"></i>
+      </button>
+      <button id="justifyCenter" class="option-button align">
+        <i class="bi bi-text-center fa-lg"></i>
+      </button>
+      <button id="justifyRight" class="option-button align">
+        <i class="bi bi-text-right fa-lg"></i>
+      </button>
+      <button id="justifyFull" class="option-button align">
+        <i class="bi bi-justify fa-lg"></i>
+      </button>
+
+      <!-- Font size option -->
+      <select id="fontSize" class="adv-option-button"></select>
+
+      <!-- Export functionality / Manul save (to ) -->
+
+      <button id="manualSave" class="option-button mSave">
+        <i class="bi bi-save2 fa-lg"></i>
+      </button>
+
+    </div>
+
+    <!-- Text field (https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)-->
+    
+    <div class="text-input" contentEditable="true"><p id="text-area">Write something...</p></div>
+    
+    <!-- Footer -->
+    
+    <footer class="footer py-2 text-white-50 position-sticky align-self-end">
+      <p><a href="#" class="text-white">Oh, My Word!</a>, written by <a href="https://twitter.com/br1ghtsid3" class="text-white" target="_blank">@Br1ghtsid3</a>.</p>
+    </footer>
+
+  </div>
+  
+  <!-- The Magic JS -->
+  <!-- <script language="JavaScript" type="text/javascript" src="/scripts/Welcome.js"></script>  -->
+  <script language="JavaScript" type="text/javascript" src="/scripts/java.js"></script>
+   
+  
+</body>
+
+</html>
