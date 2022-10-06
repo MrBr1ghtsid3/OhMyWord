@@ -246,7 +246,13 @@ select {
   box-sizing: border-box;
   margin-left: -12.5%;
   margin-top: -5.2%;
-  background: #088A68;
+  /* From https://css.glass */
+  background: rgba(255, 127, 80, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 127, 80, 0.45);
 }
 @media all and (max-width: 1300px) {
   .customAlert .message {
@@ -273,22 +279,13 @@ select {
   margin-left: -25%;
   outline: 0;
   border: 0;
-  background: #04B486;
+  background: coral;
   color: white;
 }
 .customAlert input[type=button]:hover {
   transition: 0.3s;
-  cursor: pointer;
-  background: #05cd99;
-}
-
-.rab {
-  width: 200px;
-  height: 30px;
-  outline: 0;
-  border: 0;
-  color: white;
-  background: #039b73;
+  cursor: crosshair;
+  background: #ff926a;
 }
 
 @-webkit-keyframes fadeOut {
@@ -322,10 +319,5 @@ select {
   }
   to {
     opacity: 1;
-  }
-}
-@media only screen and (min-width: 300px) {
-  .text-input {
-    width: 100% !important;
   }
 }/*# sourceMappingURL=default.css.map */

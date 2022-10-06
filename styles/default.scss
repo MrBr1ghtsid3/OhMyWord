@@ -88,7 +88,7 @@ select {
 // Welcome pop-up
 
 .customAlert{
-	
+  
   display: none;
   position: fixed;
   max-width: 25%;
@@ -101,7 +101,13 @@ select {
   box-sizing: border-box;
   margin-left: -12.5%;
   margin-top: -5.2%;
-  background: #088A68;
+  /* From https://css.glass */
+  background: rgba(255, 127, 80, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 127, 80, 0.45);
   
   @media all and (max-width: 1300px){
     .message{
@@ -130,28 +136,19 @@ select {
     margin-left: -25%;
     outline: 0;
     border: 0;
-    background: #04B486;
+    background: coral;
     color: white;
     &:hover{
       transition: 0.3s;
-      cursor: pointer;
-    	background: lighten(#04B486, 5%);  
+      cursor: crosshair;
+      background: lighten(coral, 5%);  
     }
   } 
 }
-      
-.rab{
-  width: 200px;
-  height: 30px;
-  outline: 0;
-  border: 0;
-  color: white;
-  background: darken(#04B486, 5%);
-}
-      
+            
 @keyframes fadeOut{
-	from{
-  	opacity: 1;
+  from{
+    opacity: 1;
   } 
   to{
     opacity: 0;
@@ -159,18 +156,10 @@ select {
 }
     
 @keyframes fadeIn{
-	from{
-  	opacity: 0;
+  from{
+    opacity: 0;
   } 
   to{
     opacity: 1;
-  }
-}
-
-// Make sure things scale as they should
-
-@media only screen and (min-width: 300px) {
-  .text-input {
-    width: 100% !important;
   }
 }

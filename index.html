@@ -4,7 +4,7 @@
 <head>
 
   <title>Oh, My Word! | a (not so) Rich Text Editor </title>
-  
+
   <!-- Inspired by: https://codingartistweb.com/2022/04/rich-text-editor-with-javascript/ -->
 
   <meta charset="UTF-8">
@@ -16,24 +16,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap v5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Bootstrap v5.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
   <!-- Bootstrap Font Icon CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
   <!-- Custom Styling (Sassy!) -->
   <link rel="stylesheet" href="/styles/default.css">
+
+  <!-- Welcome Java + jQuery for dependency -->
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <script language="JavaScript" type="text/javascript" src="/scripts/Welcome.js"></script> 
 
 </head>
 
 <body class="d-flex h-100 text-white bg-dark">
 
+
+  <!-- Welcome box -->
   <div class='customAlert'>
     <p class='message'></p>
-    <input type='button' class='confirmButton' value='Ok'>
+    <input type='button' class='confirmButton' value='Got it.'>
   </div>
+
+  <!-- end off welcome box -->
 
   <div class="container d-flex h-100 p-3 mx-auto flex-column">
     <div class="options mx-auto">
@@ -48,7 +57,7 @@
       <button id="underline" class="option-button format">
         <i class="bi bi-type-underline fa-lg"></i>
       </button>
-      
+
 
       <!-- List -->
       <button id="insertOrderedList" class="option-button">
@@ -92,22 +101,30 @@
     </div>
 
     <!-- Text field (https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Editable_content)-->
-    
-    <div class="text-input" contentEditable="true"><p id="text-area">Write something...</p></div>
-    
+
+    <div class="text-input" contentEditable="true">
+      <p id="text-area">Write anything...</p>
+    </div>
+
     <!-- Footer -->
-    
+
     <footer class="footer py-2 text-white-50 position-sticky align-self-end">
-      <p><a href="#" class="text-white">Oh, My Word!</a>, written by <a href="https://twitter.com/br1ghtsid3" class="text-white" target="_blank">@Br1ghtsid3</a>.</p>
+      <p><a href="#" class="text-white">Oh, My Word!</a>, written by <a href="https://twitter.com/br1ghtsid3"
+          class="text-white" target="_blank">@Br1ghtsid3</a>.</p>
     </footer>
 
   </div>
-  
+
   <!-- The Magic JS -->
-  <!-- <script language="JavaScript" type="text/javascript" src="/scripts/Welcome.js"></script>  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
   <script language="JavaScript" type="text/javascript" src="/scripts/java.js"></script>
-   
-  
+
+
 </body>
 
 </html>

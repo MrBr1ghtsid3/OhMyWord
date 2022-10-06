@@ -16,18 +16,18 @@ window.alert = function(msg, callback){
 $(function(){
   
   // add listener for when our confirmation button is clicked
-	$('.confirmButton').click(function(){
+  $('.confirmButton').click(function(){
     $('.customAlert').css('animation', 'fadeOut 0.3s linear');
     setTimeout(function(){
      $('.customAlert').css('animation', 'none');
-		$('.customAlert').css('display', 'none');
+    $('.customAlert').css('display', 'none');
     }, 300);
     currentCallback();
-  });
+  })
   
-  // our custom alert box
+  // custom welcome box
   setTimeout(function(){
-    alert('You are probably reading this alert box and have no clue why the heck you are even reading it, well guess what, the moon in reality is nothing else than a big ass pokemon, floating in space.', function(){
+    alert("Welcome!" + "\n" + "This is my personal take on a distraction-free, no budget writing tool. A fine line to walk, between design and functionality." + "\n" + "Yes, this project definitely needs more time and lovin but in the interim - feel free to play around and break it.", function(){
         console.log("Callback executed");
       });
   }, 500);
