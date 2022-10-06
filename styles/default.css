@@ -184,6 +184,32 @@ body {
   gap: 15px;
 }
 
+/* Placeholder code (inspired by https://answerly.io/blog/add-a-placeholder-to-a-contenteditable-div-with-css/) */
+[contentEditable=true]:empty:focus::before {
+  content: attr(placeholder);
+  font-style: italic;
+  font-size: 1rem;
+  -webkit-animation: hiddenGem 3s none;
+          animation: hiddenGem 3s none;
+}
+
+@-webkit-keyframes hiddenGem {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 60%;
+  }
+}
+
+@keyframes hiddenGem {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 60%;
+  }
+}
 button {
   transition: all 0.5s ease;
   color: #fff;
@@ -210,7 +236,7 @@ select {
 }
 
 .text-input {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   height: 85vh;
   width: 50vw;
   padding: 20px;
@@ -265,12 +291,14 @@ select {
 .customAlert .message {
   padding: 5px;
   color: white;
-  font-size: 14px;
+  font-size: 1.1rem;
+  text-shadow: 2px 2px #001F3F;
   line-height: 20px;
   text-align: justify;
 }
 .customAlert input[type=button] {
   position: absolute;
+  font-size: 1rem;
   top: 80%;
   left: 50%;
   width: 50%;

@@ -93,7 +93,8 @@ const highlighterRemover = (className) => {
   });
 };
 
-// Capturing p's content && saving to .txt manually (https://robkendal.co.uk/blog/2020-04-17-saving-text-to-client-side-file-using-vanilla-js)
+// Capturing DIV's content && saving to .txt manually (inspired by > https://robkendal.co.uk/blog/2020-04-17-saving-text-to-client-side-file-using-vanilla-js)
+
 let pContent = document.getElementById("text-area")
 let pDate = new Date();
 
