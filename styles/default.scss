@@ -141,7 +141,7 @@ select {
     &:hover{
       transition: 0.3s;
       cursor: crosshair;
-      background: lighten(coral, 5%);  
+      background: darken(coral, 5%);  
     }
   } 
 }

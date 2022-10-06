@@ -285,7 +285,7 @@ select {
 .customAlert input[type=button]:hover {
   transition: 0.3s;
   cursor: crosshair;
-  background: #ff926a;
+  background: #ff6c37;
 }
 
 @-webkit-keyframes fadeOut {
