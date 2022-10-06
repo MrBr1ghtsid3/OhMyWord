@@ -271,7 +271,7 @@ select {
 }
 .customAlert input[type=button] {
   position: absolute;
-  top: 100%;
+  top: 75%;
   left: 50%;
   width: 50%;
   height: 36px;
