@@ -5,7 +5,7 @@ var currentCallback;
 // override default browser alert
 window.alert = function(msg, callback){
   $('.message').text(msg);
-  $('.customAlert').css('animation', 'fadeIn 0.3s linear');
+  $('.customAlert').css('animation', 'fadeIn 1s linear');
   $('.customAlert').css('display', 'inline');
   setTimeout(function(){
     $('.customAlert').css('animation', 'none');
@@ -17,18 +17,21 @@ $(function(){
   
   // add listener for when our confirmation button is clicked
   $('.confirmButton').click(function(){
-    $('.customAlert').css('animation', 'fadeOut 0.3s linear');
+    $('.customAlert').css('animation', 'fadeOut 0.5s linear');
     setTimeout(function(){
      $('.customAlert').css('animation', 'none');
     $('.customAlert').css('display', 'none');
     }, 300);
     currentCallback();
   })
+
+  myMessage = "Welcome! This is my personal take on a distraction-free, no budget writing tool. A fine line to walk, between design and functionality. Currently compatible with Google Chrome, only! Yes, this project definitely needs more time and lovin but in the interim - feel free to play around and break it."
   
   // custom welcome box
   setTimeout(function(){
-    alert("Welcome!" + "\n" + "This is my personal take on a distraction-free, no budget writing tool. A fine line to walk, between design and functionality." + "\n" + "Yes, this project definitely needs more time and lovin but in the interim - feel free to play around and break it.", function(){
+    alert(myMessage, function(){
         console.log("Callback executed");
       });
   }, 500);
 });
+
