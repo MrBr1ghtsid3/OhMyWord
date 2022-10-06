@@ -185,12 +185,15 @@ body {
 }
 
 /* Placeholder code (inspired by https://answerly.io/blog/add-a-placeholder-to-a-contenteditable-div-with-css/) */
-[contentEditable=true]:empty:focus::before {
+[contentEditable=true]:empty:hover::before {
   content: attr(placeholder);
   font-style: italic;
   font-size: 1rem;
   -webkit-animation: hiddenGem 3s none;
           animation: hiddenGem 3s none;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
 }
 
 @-webkit-keyframes hiddenGem {
@@ -210,6 +213,10 @@ body {
     opacity: 60%;
   }
 }
+[contentEditable=true]:empty:focus {
+  opacity: 0.1;
+}
+
 button {
   transition: all 0.5s ease;
   color: #fff;
