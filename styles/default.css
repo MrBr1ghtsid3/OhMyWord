@@ -266,19 +266,9 @@ select {
   background-color: coral;
 }
 
-.customAlert {
-  display: none;
-  position: fixed;
-  max-width: 25%;
-  min-width: 250px !important;
-  min-height: 20%;
-  height: 200px;
-  left: 50%;
-  top: 50%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: -12.5%;
-  margin-top: -5.2%;
+#myModal > div > div {
+  color: aliceblue;
+  text-shadow: 2px 2px #001F3F;
   /* From https://css.glass */
   background: rgba(255, 127, 80, 0.37);
   border-radius: 16px;
@@ -288,74 +278,14 @@ select {
   border: 1px solid rgba(255, 127, 80, 0.45);
 }
 @media all and (max-width: 1300px) {
-  .customAlert .message {
+  #myModal > div > div .message {
     font-size: 14px !important;
   }
-  .customAlert input[type=button] {
+  #myModal > div > div input[type=button] {
     height: 15% !important;
   }
 }
-.customAlert .message {
-  padding: 5px;
-  color: white;
-  font-size: 1.1rem;
-  text-shadow: 2px 2px #001F3F;
-  line-height: 20px;
-  text-align: justify;
-}
-.customAlert input[type=button] {
-  position: absolute;
-  font-size: 1rem;
-  top: 85%;
-  left: 50%;
-  width: 50%;
-  height: 36px;
-  margin-top: -45px;
-  margin-left: -25%;
-  outline: 0;
-  border: 0;
-  background: coral;
-  color: white;
-}
-.customAlert input[type=button]:hover {
-  transition: 0.3s;
-  cursor: crosshair;
-  background: #ff6c37;
-}
 
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 280px) and (max-device-width: 480px) {
   html {
@@ -364,20 +294,17 @@ select {
   h1 {
     font-size: 2rem;
   }
-  .customAlert {
+  #text-area {
+    width: auto;
+  }
+  #myModal > div > div {
+    position: static;
     font-size: 4vw;
     text-shadow: 2px 2px #001F3F;
     height: auto;
     left: 25%;
     top: 35%;
-    min-width: 275px !important;
-    padding: 10px 10px 35px 10px;
-  }
-  body > div.customAlert > input {
-    transform: scale(0.7);
-  }
-  body > div.container.d-flex.h-100.p-3.mx-auto.flex-column > div.text-input {
-    width: auto;
+    min-width: 285px !important;
   }
 }
 /* Tablets (portrait and landscape) ----------- */
@@ -388,19 +315,14 @@ select {
   h1 {
     font-size: 2rem;
   }
-  .customAlert {
-    font-size: 3vw;
+  #text-area {
+    width: auto;
+  }
+  #myModal > div > div {
+    font-size: 2vw;
     text-shadow: 2px 2px #001F3F;
     height: auto;
-    left: 42%;
     top: 35%;
-    min-width: 300px !important;
-    padding: 10px 10px 35px 10px;
-  }
-  body > div.customAlert > input {
-    transform: scale(0.7);
-  }
-  body > div.container.d-flex.h-100.p-3.mx-auto.flex-column > div.text-input {
-    width: auto;
+    max-width: auto;
   }
 }/*# sourceMappingURL=default.css.map */

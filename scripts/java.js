@@ -117,4 +117,7 @@ document.querySelector('#manualSave').addEventListener('click', () => {
 
 window.onload = initializer();
 
+// Modal trigger (stackoverflow FTW)
 
+let myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
+myModal.show();

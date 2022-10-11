@@ -29,14 +29,29 @@
 
 </head>
 
-<body class="d-flex h-100 text-white bg-dark">
+<body class="mx-auto text-white bg-dark">
 
 
   <!-- Welcome box -->
-  <div class='customAlert'>
-    <p class='message'></p>
-    <input type='button' class='confirmButton' value='Got it.'>
+
+<!-- Modal -->
+
+<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Welcome!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>This is my personal take on a distraction-free, no budget writing tool. A fine line to walk, between design and functionality. Yes, this project definitely needs more time and lovin but in the interim - feel free to play around and break it.<br><br><strong>Currently compatible with Google Chrome, only!</strong> </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Got it.</button>
+      </div>
+    </div>
   </div>
+</div>
 
   <!-- end off welcome box -->
 
@@ -120,8 +135,8 @@
   <!-- Welcome Java / Save functionality & jQuery for dependency -->
   <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
-  <script language="JavaScript" type="text/javascript" src="scripts/Welcome.js"></script>
   <script language="JavaScript" type="text/javascript" src="scripts/java.js"></script>
+  <!-- <script language="JavaScript" type="text/javascript" src="scripts/Welcome.js"></script> -->
 
 </body>
 
