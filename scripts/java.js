@@ -121,3 +121,8 @@ window.onload = initializer();
 
 let myModal = new bootstrap.Modal(document.getElementById('myModal'), {});
 myModal.show();
+
+
+// Auto-save to local storage (https://blog.logrocket.com/localstorage-javascript-complete-guide/)
+
+// Designing a user-friendly autosave functionality (https://uxdesign.cc/designing-a-user-friendly-autosave-functionality-439f2fe4222d)
